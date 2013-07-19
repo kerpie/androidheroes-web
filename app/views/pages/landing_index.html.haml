@@ -1,0 +1,16 @@
+#main	
+	#left
+		#sun_rays
+		%img{:id => "logo", :src => "assets/small_logo.png"}
+	#right
+		%h1	Android Heroes
+		%p{:id => "advice"}
+			We are here to help you unleash your android development abilities and make an android hero out of you. 
+			%br 
+			Leave us your mail or stay tuned for the inauguration!
+		= form_tag register_mail_path, :id => "subscriptions", :remote => true do 
+			= text_field_tag "mail", "Let us keep you updated!"
+			= submit_tag "Save me a seat in the inauguration!"
+		#new_advice
+			%p
+				We'll send you a mail for our inauguration!

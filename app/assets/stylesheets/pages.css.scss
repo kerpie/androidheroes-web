@@ -1,0 +1,122 @@
+html{
+	background: #333333;
+}
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+#main{
+	width: 800px;
+	height: 300px;
+	margin: -150px -400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	//overflow: hidden;
+	//background: red;
+	#left{
+		float: left;
+		//background: purple;
+		height: 300px;
+		width: 300px;
+		#sun_rays{
+			background: url('landing_images/rolling_background.png') no-repeat scroll 0px 0px transparent;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			top: -55px;
+			left: -55px;
+			z-index: 0;
+			animation-name: spin;
+			animation-iteration-count: infinite;
+			animation-duration: 40000ms;
+		}
+		#logo{
+			display: block;
+			height: 200px;
+			margin: 10px auto;
+			width: 200px;
+			position: relative;
+			top: 30px;
+		}
+	}
+	#right{
+		float: right;
+		//background: pink;
+		height: 300px;
+		width: 500px;
+		h1{
+			color: white;
+			font-weight: 900;
+			font-size: 40px;
+			margin: 20px auto 20px;
+			text-align: center;
+			text-shadow: 1px 1px 1px #111;
+			text-transform: uppercase;
+			width: 400px;
+			//background: yellow;
+		}
+		#advice{
+			color: white;
+			margin: 20px auto;
+			padding: 10px;
+			text-align: center;
+			text-shadow: 1px 1px 1px #222;
+			width: 430px;
+			font-size: 16px;
+			//background: blue;
+		}
+		#subscriptions{
+			margin: 10px auto;
+			width: 450px;
+			input{
+				width: 450px;
+				padding: 10px;
+			}
+			input[type=text]{
+				width: 440px;
+				padding: 5px;
+				margin: 5px 0px;
+				font-size: 25px;
+				color: #ccc;
+				box-shadow: inset 0px 0px 10px 10px #ccc;
+			}
+			input[type=submit]{
+				border: none;
+				background: none;
+				font-size: 20px;
+				background: red;
+				color: white;
+				text-shadow: 1px 1px 0px #555;
+				&:hover{
+					box-shadow: 0px 0px 12px red;
+					text-shadow: 1px 1px 0px #333;
+				}
+			}
+		}
+		#new_advice{
+			width: 400px;
+			margin: 0 auto;
+			display: none;
+			p{
+				width: 400px;
+				padding: 10px;
+				margin: 10px auto;
+				background: red;
+				text-align: center;
+				color: white;
+			}
+		}
+	}
+}
+
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}

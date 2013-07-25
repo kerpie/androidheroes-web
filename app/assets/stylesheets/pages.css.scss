@@ -70,25 +70,28 @@ html{
 		#subscriptions{
 			margin: 10px auto;
 			width: 450px;
-			input{
-				width: 450px;
-				padding: 10px;
-			}
+			// input{
+			// 	width: 440px;
+			// 	padding: 10px;
+			// }
 			input[type=text]{
-				width: 440px;
-				padding: 5px;
-				margin: 5px 0px;
-				font-size: 25px;
+				border: none;
 				color: #ccc;
-				box-shadow: inset 0px 0px 10px 10px #ccc;
+				font-size: 25px;
+				margin: 5px 0px;
+				padding: 5px;
+				width: 440px;
 			}
 			input[type=submit]{
-				border: none;
 				background: none;
-				font-size: 20px;
 				background: red;
+				border: none;
 				color: white;
+				font-size: 20px;
+				margin: 0 auto;
+				padding: 5px;
 				text-shadow: 1px 1px 0px #555;
+				width: 450px;
 				&:hover{
 					box-shadow: 0px 0px 12px red;
 					text-shadow: 1px 1px 0px #333;
@@ -112,13 +115,13 @@ html{
 }
 
 @-webkit-keyframes spin {
-			from {
-				-webkit-transform: rotate(0deg);
-			}
-			to {
-				-webkit-transform: rotate(360deg);
-			}
-		}
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
 		
 @-moz-keyframes spin {
 	from {
